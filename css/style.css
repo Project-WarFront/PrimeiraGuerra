@@ -4,7 +4,7 @@
   --c1:#d4d4d4;
   --c2:#BFBFBF;
   --c3:#9B9D9C;
-  --c4:#201f1f;
+  --c4:#292727;
   --c5:#d60000;
 }
 
@@ -93,6 +93,13 @@ img {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.35); 
+}
+#videoCanvas{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 .hero h1 {
