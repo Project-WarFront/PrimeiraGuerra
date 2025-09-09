@@ -79,7 +79,7 @@ img {
  .hero {
   position: relative;
   height: 100vh;
-  background: url('https://theolacerda-create.github.io/html-css/img02.jpeg');
+  background: url('https://raw.githubusercontent.com/Project-WarFront/PrimeiraGuerra/main/img02.jpeg');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,14 +96,15 @@ img {
 }
 
 .hero h1 {
-  position: relative;
-  text-align:top right;
+  position: absolute;
+  top:10%;
+  left:35%;
   color:var(--c5);
   z-index: 1;
   padding: 0.3rem 0.8rem;
   border-radius: 6px;
   display: inline-block;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(5.3rem, 6vw, 4rem);
   margin: 0;
   color: var(--c1);
  
