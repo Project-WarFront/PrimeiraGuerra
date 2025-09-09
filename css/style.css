@@ -83,7 +83,7 @@ img {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
+  display: grid;  
   place-items: center;
   text-align: center;
 }
