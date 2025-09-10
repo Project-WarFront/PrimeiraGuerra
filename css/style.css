@@ -6,6 +6,7 @@
   --c3:#9B9D9C;
   --c4:#292727;
   --c5:#d60000;
+  --c6:rgb(72, 0, 0);
 }
 
 html, body {
@@ -166,6 +167,14 @@ section {
   align-items: center;
   margin: 60px 0;
   position: relative;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .timeline-item:nth-child(even) {
@@ -227,4 +236,7 @@ section {
 section.timeline {
   background: var(--c4);   
   padding: 64px 0;
+}
+#tri:hover{
+color:var(--c6);
 }
