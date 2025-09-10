@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 
 
 const video = document.createElement("video");
-video.src = "videos/7020363_Steamer_Flow_1080p.mp4";
+video.src = "media/home/smoke.mp4";
 video.autoplay = true;
 video.loop = true;
 video.muted = true;
