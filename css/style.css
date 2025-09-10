@@ -74,7 +74,7 @@ img {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('img02.png');
+  background: url('https://raw.githubusercontent.com/Project-WarFront/PrimeiraGuerra/main/img02.png');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,21 +98,6 @@ img {
   height:100%;
 }
 
-.hero h1 {
-  position: absolute;
-  top:10%;
-  left:35%;
-  color:var(--c5);
-  z-index: 1;
-  padding: 0.3rem 0.8rem;
-  border-radius: 6px;
-  display: inline-block;
-  font-size: clamp(5.3rem, 6vw, 4rem);
-  margin: 0;
-  gap: 0.5rem; 
-  top: 20%;
-  color: var(--c1);
-}
 
 section {
   padding: 64px 0;
