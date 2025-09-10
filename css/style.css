@@ -105,6 +105,8 @@ img {
   display: inline-block;
   font-size: clamp(2rem, 4vw, 3rem);
   margin: 0;
+  gap: 0.5rem; 
+  top: 20%;
   color: var(--c1);
  
 }
