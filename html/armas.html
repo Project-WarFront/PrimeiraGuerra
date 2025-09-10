@@ -3,47 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Armas e Tecnologias - Linha do Tempo</title>
-  <link rel="stylesheet" href="../CSS/armas.css">
- 
+  <title>Primeira Guerra</title>
+  <link rel="stylesheet" href="../css/armas.css">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-  <section class="timeline-section">
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h2>1915 - Armas e Tecnologias</h2>
-          <p>
-            Novas armas foram introduzidas, como metralhadoras, tanques e aviões.
-            Essas tecnologias mudaram o rumo da guerra e trouxeram destruição em grande escala.
-          </p>
-        </div>
-        <div class="timeline-img armas-container">
-          <model-viewer src="models/metralhadora.glb"
-            alt="Metralhadora"
-            auto-rotate
-            camera-controls
-            style="width: 100%; height: 300px;">
-          </model-viewer>
 
-          <model-viewer src="models/tanque.glb"
-            alt="Tanque de guerra"
-            auto-rotate
-            camera-controls
-            style="width: 100%; height: 300px;">
-          </model-viewer>
+  
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html#topo">Início</a>
+      <a href="../html/Consequencias.html">Consequências</a>
+      <a href="../html/Figuras.html">Figuras importantes</a>
+      <a href="../html/Filmes.html">Filmes/Livros</a>
+      <a href="../index.html#quiz">Quiz</a>
+    </div>
+  </nav>
 
-          <model-viewer src="models/aviao.glb"
-            alt="Avião de guerra"
-            auto-rotate
-            camera-controls
-            style="width: 100%; height: 300px;">
-          </model-viewer>
+  <main class="carousel">
+    <div class="carousel-track">
+      
+      
+      <div class="arma">
+        <model-viewer src="../models/pistola.glb" alt="Pistola" auto-rotate camera-controls></model-viewer>
+        <div class="arma-info">
+          <h2>Colt M1911</h2>
+          <p>Pistola semiautomática americana, adotada em 1911. Foi amplamente usada  pela sua confiabilidade.</p>
         </div>
       </div>
+
+      
+      <div class="arma">
+        <model-viewer src="../models/metralhadora.glb" alt="Metralhadora" auto-rotate camera-controls></model-viewer>
+        <div class="arma-info">
+          <h2>Winchester 1894</h2>
+          <p>Rifle de repetição por alavanca, confiável e rápido. Foi usado em conflitos do início do século XX</p>
+        </div>
+      </div>
+
+     
+      <div class="arma">
+        <model-viewer src="../models/tanque.glb" alt="Tanque" auto-rotate camera-controls></model-viewer>
+        <div class="arma-info">
+          <h2>Renault FT</h2>
+          <p>Tanque leve francês de 1917, o primeiro com torre giratória. Mudou para sempre o design de blindados de guerra.</p>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </main>
 
   <script src="../js/armas.js"></script>
 </body>
