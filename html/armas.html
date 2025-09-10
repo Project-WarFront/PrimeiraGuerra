@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armas e Tecnologias - Linha do Tempo</title>
+  <link rel="stylesheet" href="../CSS/armas.css">
+ 
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <section class="timeline-section">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2>1915 - Armas e Tecnologias</h2>
+          <p>
+            Novas armas foram introduzidas, como metralhadoras, tanques e aviões.
+            Essas tecnologias mudaram o rumo da guerra e trouxeram destruição em grande escala.
+          </p>
+        </div>
+        <div class="timeline-img armas-container">
+          <model-viewer src="models/metralhadora.glb"
+            alt="Metralhadora"
+            auto-rotate
+            camera-controls
+            style="width: 100%; height: 300px;">
+          </model-viewer>
+
+          <model-viewer src="models/tanque.glb"
+            alt="Tanque de guerra"
+            auto-rotate
+            camera-controls
+            style="width: 100%; height: 300px;">
+          </model-viewer>
+
+          <model-viewer src="models/aviao.glb"
+            alt="Avião de guerra"
+            auto-rotate
+            camera-controls
+            style="width: 100%; height: 300px;">
+          </model-viewer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/armas.js"></script>
+</body>
+</html>

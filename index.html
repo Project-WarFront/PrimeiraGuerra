@@ -9,47 +9,106 @@
 </head>
 
 <body>
- <section id="topo">
-    <div class="hero">
-  <div class="hero-text">
-    <h1>PRIMEIRA GUERRA</h1>
-    <h2>MUNDIAL</h2>
-  </div>
-</div>
 
+ <section class="hero" id="topo">
+    <div class="container">
+      <canvas id="videoCanvas"></canvas>
+      <h1>PRIMEIRA GUERRA MUNDIAL</h1>
+    </div>
+>>>>>>> ae07ed81548b5cc279a7ec0973ba8baee65d5537
   </section>
+
   <nav class="nav">
     <div class="container">
       <button class="menu-toggle" id="menu-toggle">☰</button>
       <div class="menu" id="menu">
-        <a href =#topo>Início</a>
+        <a href="#topo">Início</a>
+        <a href="html/Consequencias.html">Consequencias</a>
         <a href="html/Figuras.html">Figuras importantes</a>
         <a href="html/Filmes.html">Filmes/Livros</a>
-        <!--<canvas id="fogo"></canvas>
-         <script src="js/fogo.js"></script>--> 
+        <a href="#quiz">Quiz</a>
       </div>
     </div>
   </nav>
 
- 
-  <!--<section class="hero">
-    <div class="container">
-      <h1>PRIMEIRA GUERRA MUNDIAL</h1>
-    </div>
-  </section>-->
+  
+  <section class="timeline-section">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2><a href id="tri">1914 - Causas e Início</a></h2>
+          <p>A Primeira Guerra Mundial começou em 28 de julho de 1914, após o assassinato do arquiduque Francisco Ferdinando, herdeiro do Império Austro-Húngaro.</p>
+        </div>
+        <div class="timeline-img">
+          <img src="fotos/inicio.webp" alt="Início da Guerra">
+        </div>
+      </div>
 
- 
-  <section>
-    <div class="container">
-      <h2>Causas</h2>
-      <p class="lead">
-        A corrida armamentista, o imperialismo, as disputas coloniais, o nacionalismo exacerbado e o sistema de alianças militares criaram um clima de forte tensão na Europa no início do século XX. O assassinato do arquiduque Francisco Ferdinando em Sarajevo, em 28 de junho de 1914, serviu como estopim. Ele, herdeiro do trono Austro-Húngaro, e sua esposa Sofia foram mortos por um nacionalista sérvio. Esse episódio desencadeou uma série de declarações de guerra, pois as alianças entre países acabaram transformando um conflito regional em uma guerra de escala mundial.
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2><a href id="tri">1915 - Trincheiras</a></h2>
+          <p>A guerra se tornou marcada pelas trincheiras, com avanços mínimos, condições precárias e milhares de soldados em batalhas prolongadas.</p>
+        </div>
+        <div class="timeline-img">
+          <img src="fotos/trincheiras.jpg" alt="Trincheiras">
+        </div>
+      </div>
 
-      </p>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2><a href="html/armas.html" id="tri">1915 - Armas e Tecnologias</a></h2>
+          <p>Novas armas foram introduzidas, como metralhadoras, tanques, aviões e os gases tóxicos, que causaram pânico e devastação.</p>
+        </div>
+        <div class="timeline-img">
+          <img src="fotos/armas.webp" alt="Armas e Tanques">
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2><a href id="tri">1916 - Batalhas Importantes</a></h2>
+          <p>Batalhas como Verdun e Somme foram alguns dos confrontos mais sangrentos, resultando em milhões de mortos e feridos.</p>
+        </div>
+        <div class="timeline-img">
+          <img src="fotos/batalha de verdun.jpg" alt="Batalha de Verdun">
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2><a href id="tri">1917 - Entrada dos EUA</a></h2>
+          <p>A entrada dos Estados Unidos reforçou militar e economicamente a Tríplice Entente, alterando o rumo da guerra.</p>
+        </div>
+        <div class="timeline-img">
+          <img src="fotos/EUA-Primeira Guerra.jpg" alt="Entrada dos EUA">
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2><a href id="tri">1918 - Fim da Guerra</a></h2>
+          <p>Com o desgaste das potências centrais e a força da Entente, a guerra chegou ao fim em 11 de novembro de 1918.</p>
+        </div>
+        <div class="timeline-img">
+          <img src="fotos/Termino primeira guerra.webp" alt="Fim da Guerra">
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h2><a href id="tri">1919 - Tratado de Versalhes</a></h2>
+          <p>O Tratado de Versalhes impôs duras sanções à Alemanha, redefinindo fronteiras e criando tensões que levariam à Segunda Guerra Mundial.</p>
+        </div>
+        <div class="timeline-img">
+          <img src="fotos/Tratado de versalhes.webp">
+        </div>
+      </div>
     </div>
   </section>
 
-  <script src="js/hamburguer.js"> </script>
-  
+  <script src="js/hamburguer.js"></script>
+  <script src="js/videoAnim.js"></script>
+  <script src="js/timelineAnim.js"></script>
+
 </body>
 </html>
