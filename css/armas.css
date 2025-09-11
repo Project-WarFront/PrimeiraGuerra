@@ -4,6 +4,7 @@ body {
   background: #252424;
   color: #fff;
   overflow-x: hidden; 
+  overflow-y: hidden;
 }
 
 .nav {
@@ -34,19 +35,19 @@ body {
 
 .carousel {
   display: flex;
-  justify-content: flex-start; /* Alinha à esquerda */
-  align-items: center;
-  margin-top: 120px; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  margin-top: 80px; 
   height: 100vh; 
-  width: 100vw; /* Muda para 100vw para ocupar toda a largura da janela */
-  overflow: visible; /* Permite que o conteúdo que ultrapassa o contêiner seja visível */
+  width: 100vw; 
+  overflow: visible; 
 }
 
 .carousel-track {
   display: flex;
   gap: 60px;
   transition: transform 0.5s ease-in-out;
-  width: max-content; /* Mantém a largura do conteúdo */
+  width: max-content; 
 }
 
 .arma {
@@ -61,7 +62,7 @@ body {
 model-viewer {
   width: 400px;
   height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 10px; 
   cursor: grab;
 }
 
