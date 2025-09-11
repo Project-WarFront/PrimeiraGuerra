@@ -71,10 +71,11 @@ img {
   display: none;
 }
 
+
 .hero {
   position: relative;
   height: 100vh;
-  background: url('../media/home/home.png');
+  background: url('../home.png');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,11 +83,12 @@ img {
   place-items: center;
   text-align: center;
 }
-/* não mexer no hero. vai quebrar o background plmrds*/
+
 
 .hero::after {
   content: "";
   position: absolute;
+
   inset: 0;
   background: rgba(0,0,0,0.35); 
 }
