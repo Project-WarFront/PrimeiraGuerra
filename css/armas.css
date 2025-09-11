@@ -3,24 +3,22 @@ body {
   font-family: Arial, sans-serif;
   background: #252424;
   color: #fff;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
-
 
 .nav {
   background: rgba(23,23,23,0.6);
   backdrop-filter: blur(6px);
   padding: 1.2rem 1rem;
   position: fixed;
-  top:0;
-  left:0;
-  right:0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .nav a {
   color: #fff;
@@ -36,37 +34,36 @@ body {
 
 .carousel {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Alinha à esquerda */
   align-items: center;
-  margin-top: 100px;
-  height: 80vh;
-  overflow: hidden;
+  margin-top: 120px; 
+  height: 100vh; 
+  width: 100vw; /* Muda para 100vw para ocupar toda a largura da janela */
+  overflow: visible; /* Permite que o conteúdo que ultrapassa o contêiner seja visível */
 }
 
 .carousel-track {
   display: flex;
-  gap: 60px;              
+  gap: 60px;
   transition: transform 0.5s ease-in-out;
+  width: max-content; /* Mantém a largura do conteúdo */
 }
-
 
 .arma {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;   
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-
 model-viewer {
   width: 400px;
   height: 400px;
-  margin-bottom: 20px;  
-  cursor: pointer;
+  margin-bottom: 20px;
+  cursor: grab;
 }
-
 
 .arma-info {
   background: rgba(0,0,0,0.85);
@@ -74,7 +71,7 @@ model-viewer {
   padding: 20px 25px;
   border-radius: 12px;
   max-width: 500px;
-  text-align: center;   
+  text-align: center;
 }
 
 .arma-info h2 {
@@ -87,4 +84,9 @@ model-viewer {
   margin: 0;
   font-size: 1rem;
   color: #ddd;
+}
+
+.arma.active model-viewer {
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
